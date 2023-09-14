@@ -1,0 +1,48 @@
+@tailwind base;
+
+@layer base {
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-xl;
+  }
+  a {
+    @apply no-underline;
+  }
+  
+  p,
+  a,
+  html,
+  body {
+    @apply text-gray-700;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply text-gray-900
+  }
+
+  .border {
+    border: 2px solid #e1ad63;
+    width: 80%;
+    margin: auto;
+  }
+  
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Muli';
+  src: url('fonts/DB Adman X.ttf'), url('fonts/MicrosoftYaHei-01.ttf');
+}
+
+body {
+  font-family: 'Muli';
+}
